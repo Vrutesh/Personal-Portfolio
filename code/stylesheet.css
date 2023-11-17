@@ -13,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.3s linear;
+  list-style: none;
 }
 
 body {
@@ -1095,14 +1096,14 @@ nav ul li a:hover {
 .button1 {
   flex-grow: 1;
   flex-basis: 100px;
+  padding-top: 20px;
   height: 100px;
   color: var(--textcolor);
-  text-align: center;
+  text-align: start;
 }
 
 .cvbtn3 {
-  width: 230px;
-  padding: 20px;
+  padding: 20px 40px;
   cursor: pointer;
   text-decoration: none;
   color: var(--textcolor);
