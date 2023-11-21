@@ -1633,7 +1633,7 @@ nav ul li a:hover {
    }
 
 
-  .overlay {
+  .home-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -1753,7 +1753,7 @@ nav ul li a:hover {
     position: relative;   
   }
   
-  .overlay {
+  .home-overlay {
     position: absolute;
     top: 0;
     left: 0;
