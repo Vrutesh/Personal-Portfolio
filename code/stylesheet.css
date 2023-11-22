@@ -53,7 +53,7 @@ nav {
   z-index: 500;
 }
 
-.logo {
+.nav-logo {
   width: 30%;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@ nav {
   transition: all 0.4s linear;
 }
 
-.menu {
+.nav-nav-menu {
   width: 60%;
   display: flex;
   justify-content: end;
@@ -636,7 +636,7 @@ nav ul li a:hover {
   font-size: 15px;
 }
 
-.card1 {
+.card {
   display: flex;
   flex: 1 0 300px;
   height: 360px;
@@ -650,62 +650,17 @@ nav ul li a:hover {
   gap: 20px;
 }
 
-.card1 i {
+.card i {
   font-size: 80px;
   color: var(--redcolor);
   filter: drop-shadow(3px 3px 2px #555);
 }
 
-.card1:hover {
+.card:hover {
   box-shadow: 2px 2px 10px red;
   transform: scale(1.05);
 }
 
-.card2 {
-  display: flex;
-  flex: 1 0 300px;
-  height: 360px;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  gap: 20px;
-}
-
-.card2 i {
-  font-size: 80px;
-  color: var(--redcolor);
-  filter: drop-shadow(3px 3px 2px #555);
-}
-
-.card2:hover {
-  box-shadow: 2px 2px 10px red;
-  transform: scale(1.05);
-}
-
-.card3 {
-  display: flex;
-  flex: 1 0 300px;
-  height: 360px;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 20px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  gap: 20px;
-}
-
-.card3 i {
-  font-size: 80px;
-  color: var(--redcolor);
-  filter: drop-shadow(3px 3px 2px #555);
-}
-
-.card3:hover {
-  box-shadow: 2px 2px 10px red;
-  transform: scale(1.05);
-}
 
 /*--------------- service page end----------------- */
 
@@ -717,7 +672,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
   height: 900px;
   font-family: var(--primaryfont);
-  /* background-color: #EBEBEB; */
+  
 }
 
 .project-heading {
@@ -1030,7 +985,7 @@ nav ul li a:hover {
   font-family: var(--primaryfont);
 }
 
-.logo-footer {
+.nav-logo-footer {
   flex-grow: 1;
   height: 300px;
   color: var(--textcolor);
@@ -1190,7 +1145,7 @@ nav ul li a:hover {
     align-items: center;
   }
 
-  .logo {
+  .nav-logo {
     font-size: 20px;
     display: flex;
     width: 25%;
@@ -1212,11 +1167,11 @@ nav ul li a:hover {
     height: 20px;
   }
 
-  .menu {
+  .nav-nav-menu {
     width: 30%;
   }
 
-  .menu ul {
+  .nav-nav-menu ul {
     display: none;
   }
 
@@ -1396,20 +1351,12 @@ nav ul li a:hover {
     justify-content: space-between;
   }
 
-  .card1 {
+  .card {
     width: 400px;
     height: 360px;
   }
 
-  .card2 {
-    width: 400px;
-    height: 360px;
-  }
-
-  .card3 {
-    width: 400px;
-    height: 360px;
-  }
+  
 
   /* skills section */
   #skills {
@@ -1585,7 +1532,7 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  .logo-footer {
+  .nav-logo-footer {
     width: 250px;
     height: 200px;
     display: flex;
@@ -1684,26 +1631,18 @@ nav ul li a:hover {
     font-size: 16px;
   }
 
-  .card1 {
+  .card {
     width: 350px;
     height: 360px;
   }
 
-  .card2 {
-    width: 350px;
-    height: 360px;
-  }
 
-  .card3 {
-    width: 350px;
-    height: 360px;
-  }
 
   #footer {
     width: 100%;
   }
 
-  .logo-footer {
+  .nav-logo-footer {
     width: 150px;
     height: 200px;
     display: flex;
@@ -1873,12 +1812,12 @@ nav ul li a:hover {
     font-family: var(--primaryfont);
   }
 
-  .logo-footer {
+  .nav-logo-footer {
     width: 120px;
     height: 150px;
   }
 
-  .logo-footer h1 {
+  .nav-logo-footer h1 {
     font-size: 25px;
   }
 
