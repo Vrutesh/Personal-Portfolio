@@ -985,7 +985,7 @@ nav ul li a:hover {
   font-family: var(--primaryfont);
 }
 
-.nav-logo-footer {
+.logo-footer {
   flex-grow: 1;
   height: 300px;
   color: var(--textcolor);
@@ -1167,11 +1167,11 @@ nav ul li a:hover {
     height: 20px;
   }
 
-  .nav-nav-menu {
+  .nav-menu {
     width: 30%;
   }
 
-  .nav-nav-menu ul {
+  .nav-menu ul {
     display: none;
   }
 
@@ -1532,7 +1532,7 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  .nav-logo-footer {
+  .logo-footer {
     width: 250px;
     height: 200px;
     display: flex;
@@ -1642,7 +1642,7 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  .nav-logo-footer {
+  .logo-footer {
     width: 150px;
     height: 200px;
     display: flex;
@@ -1812,12 +1812,12 @@ nav ul li a:hover {
     font-family: var(--primaryfont);
   }
 
-  .nav-logo-footer {
+  .logo-footer {
     width: 120px;
     height: 150px;
   }
 
-  .nav-logo-footer h1 {
+  .logo-footer h1 {
     font-size: 25px;
   }
 
