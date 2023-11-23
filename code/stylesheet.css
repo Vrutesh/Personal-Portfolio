@@ -318,6 +318,10 @@ nav ul li a:hover {
   font-weight: 100;
 }
 
+.about-section ul{
+  margin-bottom: 30px;
+}
+
 .about-section ul li {
   list-style: none;
   text-align: left;
@@ -326,22 +330,7 @@ nav ul li a:hover {
   font-family: var(--primaryfont);
 }
 
-.connect {
-  padding: 5px;
-  font-size: 25px;
-  color: black;
-  position: relative;
-  top: 28px;
-  left: 250px;
-}
-
-.connect:hover {
-  color: var(--redcolor);
-  transition: 0.1s ease-in-out;
-}
-
 .cv {
-  margin-top: 10px;
   text-decoration: none;
   color: white;
   padding: 15px;
@@ -715,7 +704,7 @@ nav ul li a:hover {
 }
 
 .project-box:hover img {
-  transform: scale(1.1);
+  transform: scale(1.050);
 }
 
 .project-box .overlay {
@@ -1018,6 +1007,13 @@ nav ul li a:hover {
 .service-footer h5 {
   color: var(--textcolor);
   font-size: 20px;
+}
+
+.service-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
 }
 
 .service-footer ul li a {
