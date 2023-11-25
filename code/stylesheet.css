@@ -182,7 +182,7 @@ nav ul li a:hover {
 }
 
 .home-content {
-  width: 860px;
+  width: 890px;
   padding: 0 6%;
 }
 
@@ -230,7 +230,7 @@ nav ul li a:hover {
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15rem solid var(--redcolor);
-  animation: blink 0.75s step-end infinite, typing 2s steps(40, end);
+  animation: blink 0.75s step-end infinite, typing 4.5s steps(40, end) infinite ;
 }
 
 @keyframes typing {
