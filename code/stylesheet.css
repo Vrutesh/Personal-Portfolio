@@ -1707,7 +1707,14 @@ nav ul li a:hover {
     margin-top: 5%;
   }
 
-  
+  .home-content h1{
+    padding-top: 10px;
+  }
+
+  .home-content p{
+    padding-top: 10px;
+    font-size: 14px;
+  }
 
   .about-section {
     padding: 40px 0;
