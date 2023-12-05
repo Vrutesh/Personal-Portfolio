@@ -230,7 +230,7 @@ nav ul li a:hover {
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15rem solid var(--redcolor);
-  animation: blink .75s step-end infinite, typing 4.5s steps(40, end) infinite ;
+  animation: blink .9s step-end infinite, typing 12.5s steps(40, end) infinite ;
 }
 
 @keyframes typing {
@@ -242,7 +242,13 @@ nav ul li a:hover {
     width: 100%;
   }
 
- 
+  75%{
+    width: 100%;
+  }
+
+  100% {
+    width: 0;
+  }
 
 }
 
@@ -255,12 +261,15 @@ nav ul li a:hover {
     border-color: var(--redcolor);
   }
 
+  75%, 100% {
+    border-color: transparent; /* Blinking effect */
+  }
 }
 
 
 .home-socials{
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: 1%;
     transform: translateY(-50%);
     background: rgba(27, 27, 27, 0.5);
