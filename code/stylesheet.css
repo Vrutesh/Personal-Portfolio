@@ -1178,8 +1178,9 @@ nav ul li a:hover {
   .hamburger .bar {
     width: 30px;
     height: 3px;
+    border-radius: 10px;
     background-color: var(--textcolor);
-    margin: 4px 0;
+    margin: 6px 0;
     transition: 0.4s;
   }
 
@@ -1190,8 +1191,6 @@ nav ul li a:hover {
     top: 0;
     right: 0;
     background-color: rgba(5, 5, 5, 0.5);
-    /* border-left: 4px solid rgba(32, 32, 32, 0.4);
-        border-top: 4px solid rgba(32, 32, 32, 0.4); */
     overflow-x: hidden;
     transition: 0.5s ease-in-out;
     display: flex;

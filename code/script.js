@@ -28,7 +28,7 @@ let email_validation;
 let number_validation;
 let message_validation;
 
-function formSubmit() {
+document.querySelector(".sendsms").addEventListener('click', ()=>{
   //name validation
   const name = document.getElementById("name").value;
   if (name == "") {
@@ -83,7 +83,7 @@ function formSubmit() {
     document.getElementById("message").style.border = "3px solid springgreen";
   }
   document.getElementById("message_error").innerHTML = message_validation;
-}
+})
 
 //sidebar hamburger
 
@@ -114,3 +114,6 @@ darkModeToggle.addEventListener("change", () => {
     body.classList.remove("dark-mode");
   }
 });
+
+
+
