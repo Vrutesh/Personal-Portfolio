@@ -78,16 +78,16 @@
 
     <section id="home">
       <div class="home-overlay"></div>
-      <div class="home-content">
+      <div class="home-content" data-aos="fade-right" data-aos-duration="1500">
         <h2>Hey, I'm</h2>
         <h1>Vrutesh Mayekar</h1>
-        <p class="animate__animated animate__pulse animate__infinite	infinite">A FRONT-END DEVELOPER</p>
+        <p class="animate__animated animate__pulse animate__slow animate__infinite	infinite">A FRONT-END DEVELOPER</p>
         <a class="morebtn" href="#about"
-          >MORE ABOUT ME <i class="fa-solid fa-angle-down"></i></a
+          >MORE ABOUT ME <i class="fa-solid fa-angle-down animate__animated animate__fadeInDown animate__slow animate__infinite	infinite" ></i></a
         ><br />
       </div>
-      <div class="home-socials">
-        <div class="home-social">
+      <div class="home-socials"  data-aos="fade-left" data-aos-duration="1500">
+        <div class="home-social" >
           <a href="https://www.linkedin.com/in/vruteshmayekar"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
@@ -113,13 +113,11 @@
     <!--------------about page starts here------------------>
 
     <main id="about">
-      <div class="about-section" >
-        <h1 data-aos="fade-up"
-        data-aos-duration="1300">ABOUT</h1>
-        <h2 data-aos="fade-up"
-        data-aos-duration="1200">Let me introduce myself</h2>
-        <p data-aos="fade-up"
-        data-aos-duration="1000">
+      <div class="about-section" data-aos="fade-up"
+      data-aos-duration="1200" >
+        <h1>ABOUT</h1>
+        <h2>Let me introduce myself</h2>
+        <p>
           "Hi, I'm Vrutesh Mayekar, a recent graduate with a BSc in Information
           Technology, specializing in front-end development. I am passionate
           about creating user-friendly and visually appealing web experiences.
@@ -134,18 +132,15 @@
         </p>
 
         <ul>
-          <li data-aos="fade-up"
-          data-aos-duration="1000">
+          <li>
             <strong>NAME :</strong>
             <span>Vrutesh Mayekar</span>
           </li>
-          <li data-aos="fade-up"
-          data-aos-duration="1000">
+          <li>
             <strong>BIRTHDATE :</strong>
             <span>June 10, 2002</span>
           </li>
-          <li data-aos="fade-up"
-          data-aos-duration="1000">
+          <li>
             <strong>EMAIL :</strong>
             <span>vruteshpm02@gmail.com</span>
           </li>
@@ -168,49 +163,49 @@
         <h1><span>Tech</span> Stack</h1>
       </div>
       <div class="skills-content" >
-        <div class="skill1" data-aos="flip-left"
+        <div class="skill-card" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/html.png" alt="html" />
           <h2>HTML</h2>
         </div>
-        <div class="skill2" data-aos="flip-left"
+        <div class="skill-card" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/css.png" alt="css" />
           <h2>CSS</h2>
         </div>
-        <div class="skill3" data-aos="flip-left"
+        <div class="skill-card" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/javascript.png" alt="javascript" />
           <h2>Javascript</h2>
         </div>
-        <div class="skill4" data-aos="flip-left"
+        <div class="skill-card" data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/tailwind.png" alt="tailwind-css" />
           <h2>Tailwind CSS</h2>
         </div>
-        <div class="skill5" data-aos="flip-right"
+        <div class="skill-card" data-aos="flip-right"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/bootstrap.png" alt="bootstrap" />
           <h2>Bootstrap</h2>
         </div>
-        <div class="skill6" data-aos="flip-right"
+        <div class="skill-card" data-aos="flip-right"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/git.png" alt="git" />
           <h2>Git</h2>
         </div>
-        <div class="skill7" data-aos="flip-right"
+        <div class="skill-card" data-aos="flip-right"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/github.png" alt="github" />
           <h2>Github</h2>
         </div>
-        <div class="skill8" data-aos="flip-right"
+        <div class="skill-card" data-aos="flip-right"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1200">
           <img src="/assets/react.png" alt="react-js" />
@@ -221,17 +216,16 @@
 
     <!-----------------service page starts here-------------->
 
-    <section id="service" >
-      <div class="service-heading" data-aos="fade-up"
-      data-aos-duration="1300">
+    <section id="service" data-aos="fade-up"
+    data-aos-duration="1400">
+      <div class="service-heading">
         <h4>WHAT I DO</h4>
         <br />
         <h1>My Offered Service</h1>
       </div>
 
       <div class="service-content">
-        <div class="service-card card" data-aos="fade-up"
-        data-aos-duration="1300">
+        <div class="service-card card">
           <i class="fa-solid fa-code"></i>
           <h2>Web Development</h2>
           <p>
@@ -243,8 +237,7 @@
             and phones.
           </p>
         </div>
-        <div class="service-card card" data-aos="fade-up"
-        data-aos-duration="1300">
+        <div class="service-card card" >
           <i class="fa-solid fa-crop-simple"></i>
           <h2>Responsive Web Design</h2>
           <p>
@@ -255,8 +248,7 @@
             will always leave a positive impression.
           </p>
         </div>
-        <div class="service-card card" data-aos="fade-up"
-        data-aos-duration="1300">
+        <div class="service-card card">
           <i class="fa-solid fa-camera"></i>
           <h2>Web Design</h2>
           <p>
