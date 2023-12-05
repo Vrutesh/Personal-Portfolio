@@ -269,7 +269,7 @@ nav ul li a:hover {
 
 .home-socials{
     position: absolute;
-    top: 35%;
+    top: 50%;
     right: 1%;
     transform: translateY(-50%);
     background: rgba(27, 27, 27, 0.5);
@@ -1510,7 +1510,7 @@ nav ul li a:hover {
 
 @media screen and (max-width: 400px) {
   #home {
-    height: 850px;
+    height: 800px;
     background-position: center;
     position: relative;   
   }
