@@ -370,7 +370,6 @@ nav ul li a:hover {
   padding-top: 20px;
   padding-left: 200px;
   height: 560px;
-
   filter: drop-shadow(2px 2px 5px rgb(128, 125, 125));
 }
 
@@ -1225,32 +1224,10 @@ nav ul li a:hover {
     justify-content: space-between;
   }
 
-  .skill1 {
+  .skill-card{
     width: 340px;
   }
 
-  .skill2 {
-    width: 340px;
-  }
-
-  .skill3 {
-    width: 340px;
-  }
-  .skill4 {
-    width: 340px;
-  }
-  .skill5 {
-    width: 340px;
-  }
-  .skill6 {
-    width: 340px;
-  }
-  .skill7 {
-    width: 340px;
-  }
-  .skill8 {
-    width: 340px;
-  }
 
   /* project-section */
   .project {
