@@ -28,7 +28,7 @@ let email_validation;
 let number_validation;
 let message_validation;
 
-document.querySelector(".sendsms").addEventListener('click', ()=>{
+document.querySelector(".sendsms").addEventListener("click", () => {
   //name validation
   const name = document.getElementById("name").value;
   if (name == "") {
@@ -83,7 +83,7 @@ document.querySelector(".sendsms").addEventListener('click', ()=>{
     document.getElementById("message").style.border = "3px solid springgreen";
   }
   document.getElementById("message_error").innerHTML = message_validation;
-})
+});
 
 //sidebar hamburger
 
@@ -115,29 +115,18 @@ darkModeToggle.addEventListener("change", () => {
   }
 });
 
+//skills
+var tablinks = document.querySelectorAll(".tab-links");
+var tabcontents = document.querySelectorAll(".tab-contents");
 
-//skill progress bar
-
-// let progressBar =document.querySelector(".circular-progress")
-// let valueContainer= document.querySelector(".value-container")
-
-// let progressValue =0;
-// let progressEndValue = 80;
-// let speed=100
-
-// let progress= setInterval(()=>{
-//   progressValue++
-//   valueContainer.textContent=`${progressValue}%`;
-//   progressBar.style.background=`conic-gradient(
-//     red ${progressValue * 3.6}deg, 
-//     #cadcff ${progressValue * 3.6}deg
-//     )`;
-//   if(progressValue == progressEndValue){
-//     clearInterval(progress)
-//   }
-// }, speed);
-
-
-
-
-
+function opentab(tabname) {
+  for (var i = 0; i < tablinks.length; i++) {
+    tablinks[i].classList.remove("active-link");
+    if (tabcontents[i].id === tabname + "-content") {
+      tablinks[i].classList.add("active-link");
+      tabcontents[i].classList.add("active-tab");
+    } else {
+      tabcontents[i].classList.remove("active-tab");
+    }
+  }
+}

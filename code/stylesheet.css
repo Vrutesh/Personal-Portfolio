@@ -28,14 +28,12 @@ html {
   overflow-x: hidden;
 }
 
-
 link[rel="icon"] {
-  width: 32px; 
-  height: 32px; 
-  border-radius: 50%; 
-  overflow: hidden; /
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
 }
-
 
 /*--------------- navbar start----------------- */
 
@@ -230,7 +228,7 @@ nav ul li a:hover {
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.15rem solid var(--redcolor);
-  animation: blink .9s step-end infinite, typing 12.5s steps(40, end) infinite ;
+  animation: blink 0.9s step-end infinite, typing 12.5s steps(40, end) infinite;
 }
 
 @keyframes typing {
@@ -242,14 +240,13 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  75%{
+  75% {
     width: 100%;
   }
 
   100% {
     width: 0;
   }
-
 }
 
 @keyframes blink {
@@ -261,38 +258,36 @@ nav ul li a:hover {
     border-color: var(--redcolor);
   }
 
-  75%, 100% {
+  75%,
+  100% {
     border-color: transparent; /* Blinking effect */
   }
 }
 
-
-.home-socials{
-    position: absolute;
-    top: 35%;
-    right: 1%;
-    transform: translateY(-50%);
-    background: rgba(27, 27, 27, 0.5);
-    box-shadow: rgba(100,100,111,.2) 0 7px 29px 0;
-    padding: 20px 16px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
+.home-socials {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  background: rgba(27, 27, 27, 0.5);
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  padding: 20px 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
 }
 
-.home-social i{
+.home-social i {
   color: white;
-  font-size: 30px;  
+  font-size: 30px;
 }
 
 .home-social i:hover {
   color: var(--redcolor);
   transform: scale(1.28);
-} 
-
-
+}
 
 /*--------------- Hoomepage end----------------- */
 
@@ -331,7 +326,7 @@ nav ul li a:hover {
   font-weight: 100;
 }
 
-.about-section ul{
+.about-section ul {
   margin-bottom: 30px;
 }
 
@@ -339,7 +334,7 @@ nav ul li a:hover {
   list-style: none;
   text-align: left;
   line-height: 20px;
-  padding: 10px;
+  padding: 10px 0;
   font-family: var(--primaryfont);
 }
 
@@ -381,13 +376,62 @@ nav ul li a:hover {
 #skills {
   height: 950px;
   padding: 120px 0;
+  display: flex;
+}
+
+.tab-titles {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0 0 2rem;
+  gap: 30px;
+  margin: 20px 0 40px;
+}
+
+.tab-info {
+  width: 80%;
+  height: 100%;
+  margin: 0 3% 0 0;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 1.4rem;
+  font-family: var(--primaryfont);
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--redcolor);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 40%;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: flex;
+  flex-direction: column;
 }
 
 .skills-heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-family: var(--primaryfont);
   font-size: 30px;
 }
@@ -396,26 +440,24 @@ nav ul li a:hover {
   color: var(--redcolor);
 }
 
-.skills-content {
+.skill-content {
   display: flex;
   flex-wrap: wrap;
-  height: 400px;
-  gap: 30px;
-  margin: 0 5%;
-  border-radius: 20px;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
+  border-radius: 20px;
+  gap: 30px;
 }
 
-.skills-content h2 {
+.skill-content h2 {
   font-family: var(--primaryfont);
   font-size: 22px;
 }
 
 .skill-card {
   display: flex;
-  width: 300px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -424,7 +466,7 @@ nav ul li a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   text-align: center;
   gap: 20px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .skill-card img {
@@ -436,13 +478,121 @@ nav ul li a:hover {
   box-shadow: 2px 2px 10px red;
 }
 
+.education-content {
+  padding-top: 2rem;
+  display: flex;
+  font-family: var(--primaryfont);
+}
+
+.education-info {
+  width: 50%;
+}
+
+.education-info h2 {
+  padding: 1rem 0 3rem 12rem;
+}
+
+.education-column {
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 1000ms all;
+}
+
+.education-column:hover {
+  box-shadow: 2px 2px 10px red;
+  transform: scale(1.05);
+}
+
+.education-section {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 1.2rem;
+}
+
+.education-time {
+  width: 230px;
+  padding-left: 50px;
+}
+
+.education-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.education-rounder {
+  width: 12px;
+  height: 12px;
+  background-color: var(--redcolor);
+  border-radius: 50%;
+}
+
+.education-rounder::before {
+  content: "";
+  position: absolute;
+  transform: translate(-5px, -5px);
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--redcolor);
+  border-radius: 50%;
+}
+
+.education-line {
+  display: block;
+  height: 50px;
+  width: 2px;
+  background-color: var(--redcolor);
+  transform: translate(5px, -4px);
+}
+
+.education-college {
+  font-size: 0.8rem;
+}
+
+.course-info {
+  width: 50%;
+  padding-left: 5rem;
+}
+
+.course-info h2 {
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.course-column {
+  height: 400px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 1000ms all;
+}
+
+.course-column:hover {
+  box-shadow: 2px 2px 10px red;
+  transform: scale(1.05);
+}
+.course-section {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.course-section ul li {
+  list-style-type: decimal;
+  margin-bottom: 20px;
+}
+
+.course-section ul > li > p {
+  font-size: 0.8rem;
+}
+
 /*--------------- skill page end----------------- */
 
 /*--------------- Service page start----------------- */
 
 #service {
   height: 800px;
-  padding: 130px 0;
+  padding: 120px 0;
 }
 
 .service-heading {
@@ -501,7 +651,6 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-
 /*--------------- service page end----------------- */
 
 /*--------------- project page start----------------- */
@@ -512,7 +661,6 @@ nav ul li a:hover {
   margin-bottom: 20px;
   height: 900px;
   font-family: var(--primaryfont);
-  
 }
 
 .project-heading {
@@ -555,7 +703,7 @@ nav ul li a:hover {
 }
 
 .project-box:hover img {
-  transform: scale(1.050);
+  transform: scale(1.05);
 }
 
 .project-box .overlay {
@@ -719,7 +867,6 @@ nav ul li a:hover {
   transition: 0.6s;
 }
 
-
 .cvbtn1:hover {
   color: var(--redcolor);
 }
@@ -803,9 +950,9 @@ nav ul li a:hover {
   transition: 0.6s;
 }
 
-.sendsms:active{
-  transition: .7s;
-  transform: scale(.9);
+.sendsms:active {
+  transition: 0.7s;
+  transform: scale(0.9);
 }
 
 .sendsms:hover {
@@ -864,7 +1011,6 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .service-footer ul li a {
@@ -932,9 +1078,9 @@ nav ul li a:hover {
   transition: 0.6s;
 }
 
-.cvbtn3:active{
-  transition: .7s;
-  transform: scale(.9);
+.cvbtn3:active {
+  transition: 0.7s;
+  transform: scale(0.9);
 }
 
 .cvbtn3:hover {
@@ -1126,16 +1272,16 @@ nav ul li a:hover {
     font-family: var(--primaryfont);
   }
 
-  .morebtn:active{
-    transition: .7s;
-    transform: scale(.9);
+  .morebtn:active {
+    transition: 0.7s;
+    transform: scale(0.9);
   }
 
   .morebtn:hover {
     border-color: var(--redcolor);
   }
 
-  .home-socials{
+  .home-socials {
     display: none;
   }
   /* about-section */
@@ -1163,9 +1309,9 @@ nav ul li a:hover {
     width: 250px;
   }
 
-  .cv:active{
-    transition: .7s;
-    transform: scale(.9);
+  .cv:active {
+    transition: 0.7s;
+    transform: scale(0.9);
   }
 
   .profile-pic {
@@ -1202,13 +1348,31 @@ nav ul li a:hover {
     height: 360px;
   }
 
-  
-
   /* skills section */
   #skills {
     width: 100%;
     height: auto;
     padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab-info {
+    margin: 0;
+  }
+
+  .tab-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5rem;
+    gap: 50px;
+    margin: 20px 0 50px;
+  }
+
+  .tab-links {
+    margin-right: 0;
   }
 
   .skills-heading {
@@ -1225,10 +1389,45 @@ nav ul li a:hover {
     justify-content: space-between;
   }
 
-  .skill-card{
+  .skill-card {
     width: 340px;
   }
 
+  .education-info {
+    width: 100%;
+  }
+
+  .education-info h2 {
+    padding: 1rem 0 3rem 8rem;
+  }
+  .education-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .education-time {
+    width: 160px;
+  }
+
+  .course-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .course-info h2 {
+    text-align: center;
+    padding: 1rem 1rem 2rem 0;
+  }
+
+  .course-column {
+    height: 250px;
+  }
+
+  .course-section {
+    padding: 0 7%;
+  }
 
   /* project-section */
   .project {
@@ -1328,9 +1527,9 @@ nav ul li a:hover {
     border: 4px solid rgb(190, 225, 255);
   }
 
-  .cvbtn1:active{
-    transition: .7s;
-    transform: scale(.9);
+  .cvbtn1:active {
+    transition: 0.7s;
+    transform: scale(0.9);
   }
 
   .contact-form {
@@ -1346,7 +1545,7 @@ nav ul li a:hover {
     width: 100%;
   }
 
-  .sendsms{
+  .sendsms {
     border: 4px solid rgb(190, 225, 255);
   }
 
@@ -1398,11 +1597,10 @@ nav ul li a:hover {
 /*--------------- Media query ends here----------------- */
 
 @media screen and (max-width: 450px) {
-   #home{
+  #home {
     background-position: center;
-    position: relative; 
-   }
-
+    position: relative;
+  }
 
   .home-overlay {
     position: absolute;
@@ -1412,10 +1610,10 @@ nav ul li a:hover {
     height: 100%;
     z-index: 1;
     background: black;
-    opacity: .4; 
+    opacity: 0.4;
   }
 
-  .home-content{
+  .home-content {
     z-index: 3;
   }
 
@@ -1455,12 +1653,42 @@ nav ul li a:hover {
     font-size: 16px;
   }
 
+  .tab-links {
+    font-size: 1.1rem;
+  }
+
+  .education-info h2 {
+    padding: 1rem 0 3rem 5rem;
+  }
+
+  .education-time {
+    width: 145px;
+    font-size: 0.9rem;
+  }
+
+  .Qualification {
+    width: 140px;
+    font-size: 0.9rem;
+  }
+
+  .course-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .course-info h2 {
+    text-align: center;
+    padding: 1rem 1rem 2rem 0;
+  }
+
+  .course-section ul > li {
+    font-size: 0.9rem;
+  }
+
   .card {
     width: 350px;
     height: 360px;
   }
-
-
 
   #footer {
     width: 100%;
@@ -1513,9 +1741,9 @@ nav ul li a:hover {
   #home {
     height: 800px;
     background-position: center;
-    position: relative;   
+    position: relative;
   }
-  
+
   .home-overlay {
     position: absolute;
     top: 0;
@@ -1524,28 +1752,57 @@ nav ul li a:hover {
     height: 100%;
     z-index: 1;
     background: black;
-    opacity: .4; 
+    opacity: 0.4;
   }
 
-  .home-content{
+  .home-content {
     z-index: 3;
   }
 
-  .home-content h2{
+  .home-content h2 {
     margin-top: 5%;
   }
 
-  .home-content h1{
+  .home-content h1 {
     padding-top: 10px;
   }
 
-  .home-content p{
+  .home-content p {
     padding-top: 10px;
     font-size: 14px;
   }
 
   .about-section {
     padding: 40px 0;
+  }
+
+  .tab-links {
+    font-size: 1.1rem;
+  }
+
+  .education-info h2 {
+    padding: 1rem 0 3rem 5rem;
+  }
+
+  .education-time {
+    padding-left: 15px;
+    width: 135px;
+    font-size: 0.9rem;
+  }
+
+  .Qualification {
+    width: 140px;
+    font-size: 0.9rem;
+  }
+
+  .course-info {
+    width: 100%;
+    padding: 0;
+  }
+
+  .course-info h2 {
+    text-align: center;
+    padding: 1rem 1rem 2rem 0;
   }
 
   .project-heading h1 {
