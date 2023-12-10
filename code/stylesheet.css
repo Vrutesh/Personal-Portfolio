@@ -1336,8 +1336,7 @@ nav ul li a:hover {
   .service-content {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 1000px;
+    height: 1100px;
     gap: 50px;
     align-items: center;
     justify-content: space-between;
@@ -1910,7 +1909,7 @@ nav ul li a:hover {
   }
 
   .quick-links {
-    width: 200px;
+    width: 120px;
     height: 350px;
     list-style: none;
   }
