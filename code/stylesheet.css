@@ -374,7 +374,7 @@ nav ul li a:hover {
 /*--------------- skill page start----------------- */
 
 #skills {
-  height: 950px;
+  height: 700px;
   padding: 120px 0;
   display: flex;
 }
@@ -585,6 +585,62 @@ nav ul li a:hover {
 .course-section ul > li > p {
   font-size: 0.8rem;
 }
+
+.experience-content{
+  font-family: var(--primaryfont);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.experience-content h1{
+  padding: 1rem 0 2rem 0;
+}
+
+.experience-column {
+  padding: 0 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: 1000ms all;
+}
+
+.experience-column:hover {
+  box-shadow: 2px 2px 10px red;
+  transform: scale(1.05);
+}
+
+.experience-section{
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience-position{
+  font-size: 1.2rem;
+  color: var(--redcolor);
+}
+
+.job-type{
+  font-size: .9rem;
+}
+
+.experience-company{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+
+.experience-company span{
+  font-size: .9rem;
+}
+
+
+
 
 /*--------------- skill page end----------------- */
 
@@ -1683,6 +1739,10 @@ nav ul li a:hover {
   .course-section ul > li {
     font-size: 0.9rem;
   }
+  .experience-column {
+    height: 350px;
+    width: 350px;
+  }
 
   .card {
     width: 350px;
@@ -1802,6 +1862,11 @@ nav ul li a:hover {
   .course-info h2 {
     text-align: center;
     padding: 1rem 1rem 2rem 0;
+  }
+
+  .experience-column {
+    height: 300px;
+    width: 300px;
   }
 
   .project-heading h1 {
